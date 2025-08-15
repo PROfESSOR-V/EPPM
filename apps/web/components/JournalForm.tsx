@@ -35,7 +35,7 @@ export default function JournalForm() {
   return (
     <div>
       <textarea
-        className="w-full h-40 p-2 rounded border"
+        className="w-full h-40 resize-none rounded-lg border border-white/10 bg-black/30 p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
         placeholder="Write your day..."
         value={content}
         onChange={(e) => setContent(e.target.value)}
